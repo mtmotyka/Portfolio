@@ -7,20 +7,22 @@
 	justify-content: center;
 	align-items: center;
     .inner-home {
-        // h1 {
-        //     font-size: 144px!important;
-        //     font-weight: 100;
-        //     color: #fff;
-        //     font-family: $font-family-base;
-        //     letter-spacing: 28px;
-        //     position: relative;
-        //     @keyframes blink {
-        //         0% {opacity: 1;}
-        //         1% {opacity: 0;}
-        //         50% {opacity: 0;}
-        //         51% {opacity: 1;}
-        //     }
-        // }
+        span {
+            position: relative;
+            &:after {
+                content: '_';
+                position: absolute;
+                font-size: 144px;
+                font-weight: 100;
+                bottom: -21px;
+                animation: blinker 1s step-start infinite;
+                @keyframes blinker {
+                    50% {
+                        opacity: 0;
+                    }
+                }
+            }
+        }
         h5 {
             font-family: $font-family-base;
             font-weight: 300;
@@ -134,14 +136,14 @@
                 width: 35px;
                 height: 35px;
                 margin-right: 20px;
-                &.git-ico {
-                    background: url(../assets/github_ico.svg);
+                &.bit-ico {
+                    background: url(../assets/bitbucket_ico.svg);
                     background-repeat: no-repeat!important;
                     background-size: contain!important;
                     background-position: center center!important;
                     transition: all .3 ease-in-out;
                     &:hover {
-                        background: url(../assets/github_ico_blue.svg);
+                        background: url(../assets/bitbucket_ico_blue.svg);
                         cursor: pointer;    
                     }
                 }
@@ -163,7 +165,7 @@
                     background-position: center center!important;
                     transition: all .3 ease-in-out;
                     &:hover {
-                        background: url(../assets/gbehance_ico_blue.svg);
+                        background: url(../assets/behance_ico_blue.svg);
                         cursor: pointer;    
                     }
                 }

@@ -22,14 +22,11 @@ get_header(); ?>
     <div class="line" id="line-6-white"></div>
 </div>
 
-
-
-
 <section class="home-section-1 container" id="home">
     <div class="inner-home">
-        <h1 class="glitch" data-text="mateusz">mateusz</h1>
+        <span><h1 class="glitch" data-text="mateusz">mateusz</h1></span>
         <h5>FRONT-END DEVELOPER</h5>
-        <h6>EX. UX DESIGNER</h6>
+        <h6>EX UX DESIGNER</h6>
         <a href="#" class="btn_custom_blue circle btn_big">START</a>
     </div>
 </section>
@@ -53,7 +50,7 @@ get_header(); ?>
         </div>
         <div class="col-md-6">
             <h1>UMIEJĘTNOŚCI <br> I WIEDZA</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, a consequatur ea mollitia, sit exercitationem minus in fugit nulla laboriosam provident aliquid iure optio totam, veritatis nesciunt nihil labore dolorem!</p>
+            <p>Jako Front-End Developer, mam opanowanego HTMLa oraz CSSa, których znajomość oceniam na bardzo dobrą. W projektach wykorzystuję również preprocesora CSS - SCSS. Aktualnie wciąż uczę się JavaScriptu, a jego znajomość oceniam na ponad przeciętną. W swojej pracy wykorzystuję również doświadczenia UXa, dzięki czemu nie mam problemu z operowaniem na wszelkiego rodzaju programach graficznych, głównie firmy Adobe.</p>
         </div>
     </div>
 </section>
@@ -68,7 +65,7 @@ get_header(); ?>
             <div class="col-sm-9 job-col">
                 <p class="company">ADream Group</p>
                 <p class="position">Front-End Developer</p>
-                <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ullam officia dolor? Commodi dolores amet id temporibus tenetur distinctio consectetur unde animi consequatur alias ab vero, ullam quibusdam pariatur reiciendis?</p>
+                <p class="desc">Po niecałym roku jako UX Designer stwierdziłem, że nie zadowala mnie to co robię, a od zawsze miałem parcie na programowanie. Postanowiłem zmienić stanowisko na Front-End Developera i od września 2019 roku zajmuje się już tylko tym. Podczas kodowania stron często korzystam ze swojego dośwadczenia UXa, dzięki czemu strony są jeszcze lepsze w odbiorze.</p>
             </div>
         </div>
    </div>
@@ -80,7 +77,7 @@ get_header(); ?>
             <div class="col-sm-9 job-col">
                 <p class="company">ADream Group</p>
                 <p class="position">UX Designer</p>
-                <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ullam officia dolor? Commodi dolores amet id temporibus tenetur distinctio consectetur unde animi consequatur alias ab vero, ullam quibusdam pariatur reiciendis?</p>
+                <p class="desc">W listopadzie 2018 roku dostałem się na staż w Agencji Interaktywnej ADream na stanowisko UX Designer. Po 3 miesiącach rozpocząłem pracę na pełen etat na tym samym stanowisku. W pracy głównie zajmowałem się tworzeniem makiet pod nowe strony, a od czasu do czasu współprowadziłem warsztat z klientami.</p>
             </div>
         </div>
    </div>
@@ -92,7 +89,7 @@ get_header(); ?>
             <div class="col-sm-9 job-col">
                 <p class="company">Wyższa Szkoła Zarządzania i Bankowości w Krakowie</p>
                 <p class="position">Studia na kierunku informatyka</p>
-                <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ullam officia dolor? Commodi dolores amet id temporibus tenetur distinctio consectetur unde animi consequatur alias ab vero, ullam quibusdam pariatur reiciendis?</p>
+                <p class="desc">W 2015 roku rozpocząłem studia na kierunku informatyka. Kończyłem je na specjalizacji animacja i grafika komputerowa, jednak jak się później okazało to nie to co chciałem robić. W czerwcu 2019 roku obroniłem pracę inżynierską i uzyskałem tytuł inżyniera</p>
             </div>
         </div>
    </div>
@@ -106,7 +103,7 @@ get_header(); ?>
             <p class="social">Znajdziesz mnie również na:</p>
             <div class="social-icons">
                 <a href="#" class="social-icon linked-ico"></a>
-                <a href="#" class="social-icon git-ico"></a>
+                <a href="#" class="social-icon bit-ico"></a>
                 <a href="#" class="social-icon behance-ico"></a>
             </div>
         </div>

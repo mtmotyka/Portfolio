@@ -5941,11 +5941,13 @@ ul, ol, address {
 .wpcf7 .label_anim.has-value {
   top: -10px;
   left: 0px;
-  font-size: 14px; }
+  font-size: 14px;
+  color: #64DCDC; }
 .wpcf7 .label_anim_fix.has-value-fix {
   top: -10px;
   left: 0px;
-  font-size: 14px; }
+  font-size: 14px;
+  color: #64DCDC; }
 .wpcf7 .form-control {
   padding-left: 15px;
   padding-right: 15px;
@@ -6020,6 +6022,7 @@ ul, ol, address {
   text-align: center;
   position: relative;
   background-size: 0px 0px;
+  border-radius: 0px;
   /* by default, circle is of 0px */ }
   .wpcf7 .wpcf7-submit:after {
     content: '';
@@ -6049,6 +6052,39 @@ ul, ol, address {
     .wpcf7 .wpcf7-submit:hover:after {
       width: 35px;
       left: 0%; }
+.wpcf7 .btn_wrapper {
+  position: relative;
+  display: block;
+  text-align: center;
+  margin: 20px auto; }
+  .wpcf7 .btn_wrapper:after {
+    content: '';
+    position: absolute;
+    width: 65px;
+    height: 1px;
+    background-color: #fff;
+    top: 48%;
+    left: 55%;
+    transition: all .18s ease-in-out; }
+  .wpcf7 .btn_wrapper:before {
+    content: '';
+    position: absolute;
+    opacity: 0;
+    top: -66px;
+    left: -66px;
+    right: -66px;
+    bottom: -66px;
+    background: radial-gradient(farthest-side, transparent calc(100% - 3px), #fff calc(100% - 2px) calc(100% - 1px), transparent 100%) fixed no-repeat;
+    background-size: 66px 66px;
+    background-position: inherit;
+    pointer-events: none; }
+  .wpcf7 .btn_wrapper:hover {
+    border: 1px solid transparent; }
+    .wpcf7 .btn_wrapper:hover:before {
+      opacity: 1; }
+    .wpcf7 .btn_wrapper:hover:after {
+      width: 35px;
+      left: 39%; }
 .wpcf7 .wpcf7-form-control-wrap {
   position: relative;
   display: block;
@@ -6849,6 +6885,18 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+  .home-section-1 .inner-home span {
+    position: relative; }
+    .home-section-1 .inner-home span:after {
+      content: '_';
+      position: absolute;
+      font-size: 144px;
+      font-weight: 100;
+      bottom: -21px;
+      animation: blinker 1s step-start infinite; }
+@keyframes blinker {
+  50% {
+    opacity: 0; } }
   .home-section-1 .inner-home h5 {
     font-family: "IBM Plex Sans", sans-serif;
     font-weight: 300;
@@ -6935,14 +6983,14 @@ footer {
       width: 35px;
       height: 35px;
       margin-right: 20px; }
-      .home-section-5 .contact-text .social-icons .social-icon.git-ico {
-        background: url(../assets/github_ico.svg);
+      .home-section-5 .contact-text .social-icons .social-icon.bit-ico {
+        background: url(../assets/bitbucket_ico.svg);
         background-repeat: no-repeat !important;
         background-size: contain !important;
         background-position: center center !important;
         transition: all .3 ease-in-out; }
-        .home-section-5 .contact-text .social-icons .social-icon.git-ico:hover {
-          background: url(../assets/github_ico_blue.svg);
+        .home-section-5 .contact-text .social-icons .social-icon.bit-ico:hover {
+          background: url(../assets/bitbucket_ico_blue.svg);
           cursor: pointer; }
       .home-section-5 .contact-text .social-icons .social-icon.linked-ico {
         background: url(../assets/linkedin_ico.svg);
@@ -6960,7 +7008,7 @@ footer {
         background-position: center center !important;
         transition: all .3 ease-in-out; }
         .home-section-5 .contact-text .social-icons .social-icon.behance-ico:hover {
-          background: url(../assets/gbehance_ico_blue.svg);
+          background: url(../assets/behance_ico_blue.svg);
           cursor: pointer; }
   .home-section-5 .contact-form {
     padding-top: 80px; }
