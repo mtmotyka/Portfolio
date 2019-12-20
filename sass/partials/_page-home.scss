@@ -1,0 +1,179 @@
+.home-section-1 {
+    height: 100vh;
+    text-align: center;
+    margin: auto;
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    .inner-home {
+        // h1 {
+        //     font-size: 144px!important;
+        //     font-weight: 100;
+        //     color: #fff;
+        //     font-family: $font-family-base;
+        //     letter-spacing: 28px;
+        //     position: relative;
+        //     @keyframes blink {
+        //         0% {opacity: 1;}
+        //         1% {opacity: 0;}
+        //         50% {opacity: 0;}
+        //         51% {opacity: 1;}
+        //     }
+        // }
+        h5 {
+            font-family: $font-family-base;
+            font-weight: 300;
+            font-size: 22px;
+            color: $color-blue;
+            letter-spacing: 11px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        h6 {
+            font-family: $font-family-base;
+            font-weight: 300;
+            font-size: 13px;
+            color: $color-blue;
+            letter-spacing: 11px;
+            margin-bottom: 120px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.home-section-2 {
+    padding-top: 200px;
+    h1 {
+        display: inline;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    p {
+        &:nth-of-type(1) {
+            margin-bottom: 30px;
+        }
+    }
+
+}
+
+.home-section-3 {
+    padding-top: 450px;
+    h1 {
+        text-align: right;
+        margin-bottom: 70px;
+    }
+    p {
+        text-align: right;
+    }
+}
+
+.home-section-4 {
+    padding-top: 450px;
+    h1 {
+        text-align: center;
+        margin-bottom: 100px;
+    }
+    .cv-single {
+        .job-col {
+            position: relative;
+            padding-bottom: 60px;
+            &:before {
+                content: '';
+                position: absolute;
+                top: 10px;
+                left: -50px;
+                width: 1px;
+                height: 100%;
+                background-color: $color-blue;
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                top: 10px;
+                left: -55px;
+                height: 11px;
+                width: 11px;
+                background-color: $color-blue;
+                border-radius: 50%;
+            }
+            .company {
+                font-size: 16px;
+                font-weight: 300;
+            }
+            .position {
+                font-size: 32px;
+                font-weight: 600;
+                margin-bottom: 20px;
+            }
+            .desc {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+.home-section-5 {
+    padding: 450px 0 200px;
+    .contact-text {
+        h1 {
+            margin-bottom: 30px;
+        }
+        p {
+            padding-right: 15%;
+        }
+        .social {
+            font-size: 14px;
+            font-weight: 300;
+            margin-top: 70px;
+        }
+        .social-icons {
+            padding-top: 10px;
+            .social-icon {
+                display: inline-block;
+                width: 35px;
+                height: 35px;
+                margin-right: 20px;
+                &.git-ico {
+                    background: url(../assets/github_ico.svg);
+                    background-repeat: no-repeat!important;
+                    background-size: contain!important;
+                    background-position: center center!important;
+                    transition: all .3 ease-in-out;
+                    &:hover {
+                        background: url(../assets/github_ico_blue.svg);
+                        cursor: pointer;    
+                    }
+                }
+                &.linked-ico {
+                    background: url(../assets/linkedin_ico.svg);
+                    background-repeat: no-repeat!important;
+                    background-size: contain!important;
+                    background-position: center center!important;
+                    transition: all .3 ease-in-out;
+                    &:hover {
+                        background: url(../assets/linkedin_ico_blue.svg);
+                        cursor: pointer;    
+                    }
+                }
+                &.behance-ico {
+                    background: url(../assets/behance_ico.svg);
+                    background-repeat: no-repeat!important;
+                    background-size: contain!important;
+                    background-position: center center!important;
+                    transition: all .3 ease-in-out;
+                    &:hover {
+                        background: url(../assets/gbehance_ico_blue.svg);
+                        cursor: pointer;    
+                    }
+                }
+            }
+        }
+    }
+    .contact-form {
+        padding-top: 80px;
+        .message {
+            margin-top: 50px;
+        }
+    }
+}

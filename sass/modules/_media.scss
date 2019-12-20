@@ -1,0 +1,53 @@
+@media only screen and (max-width : 1441px) {
+  body{
+    font-size: 14px;
+    p, a, li{
+      font-size: 14px;
+    }
+  }
+  .wpcf7 {
+    .wpcf7-acceptance {
+      span {
+        a {
+          font-size: 10px!important;
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (min-width : 1199px) {
+  .hamburger{
+    display: none;
+  }
+}
+
+@media only screen and (max-width : 1199px) {
+}
+
+@media only screen and (max-width : 991px) {
+  .wpcf7 {
+    .wpcf7-acceptance {
+      text-align: left!important;
+    }
+  }
+}
+
+@media only screen and (min-width: 991px) {
+}
+
+@media only screen and (max-width : 767px) {
+
+}
+
+@media only screen and (max-width : 575px) {
+  html{
+    min-width: 320px;
+  }
+  h1 {
+    font-size: 35px!important;
+  }
+}
+
+

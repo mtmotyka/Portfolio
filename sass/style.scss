@@ -1,0 +1,211 @@
+/**
+* styles.scss
+* ---
+* Main `sass` file. Import here `sass` files
+*/
+
+@import "modules/bootstrap/bootstrap";
+@import "modules/_variables";
+@import "modules/_mixins";
+@import "modules/_hamburgers";
+@import "modules/_animations";
+// @import "modules/_slick";
+// @import "modules/_slick-theme";
+
+@media (min-width: 1200px){
+  .container{
+    max-width: 1410px;
+  }
+}
+
+body{
+  background-color: #22222A;
+  color: $text-color;
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  font-weight: 400;
+  overflow-x: hidden;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  position: relative;
+  .lines-blue {
+    position: relative;
+  }
+  
+  .line {
+    position: absolute;
+  }
+  
+  .line:before {
+    content: '';
+    background-color: $color-blue;
+    position: fixed;
+    width: 1px;
+    height: 100%;
+    min-height: 5vh;
+    left: 0px;
+    z-index: 0;
+  }
+  
+  .line#line_0:before {
+    left: 6%;
+    height: 5%;
+  }
+  
+  .line#line_1:before {
+    left: 16%;
+    height: 4%;
+  }
+  
+  .line#line_2:before {
+    left: 32%;
+    height: 7%;
+  }
+  
+  .line#line_3:before {
+    left: 48%;
+    height: 5%;
+  }
+  
+  .line#line_4:before {
+    left: 64%;
+    height: 5%;
+  }
+  
+  .line#line_5:before {
+    left: 80%;
+    height: 10%;
+    z-index: 0;
+  }
+  
+  .line#line_6:before {
+    left: 94%;
+    height: 3%;
+    z-index: 0;
+  }
+  
+  .line#line-0-white:before {
+    left: 6%;
+    height: 100%;
+    background-color: #282830;
+    z-index: -1;
+  }
+  
+  .line#line-1-white:before {
+    left: 16%;
+    height: 100%;
+    background-color: #282830;
+    z-index: -1;
+  }
+  
+  .line#line-2-white:before {
+    left: 32%;
+    height: 100%;
+    background-color: #282830;
+    z-index: -1;
+  }
+  
+  .line#line-3-white:before {
+    left: 48%;
+    height: 100%;
+    background-color: #282830;
+    z-index: -1;
+  }
+  
+  .line#line-4-white:before {
+    left: 64%;
+    height: 100%;
+    background-color: #282830;
+    z-index: -1;
+  }
+  
+  .line#line-5-white:before {
+    left: 80%;
+    height: 100%;
+    background-color: #282830;
+    z-index: -1;
+  }
+  
+  .line#line-6-white:before {
+    left: 94%;
+    height: 100%;
+    background-color: #282830;
+    z-index: -1;
+  }
+}
+html{
+  height: 100%;
+}
+b,strong {
+  font-weight: 700;
+}
+.center, .aligncenter{
+  text-align: center;
+  margin: 0 auto;
+}
+p{
+  color: $text-color;
+  margin: 0px;
+  font-weight: 400;
+  line-height: 1.9;
+  font-size: 22px;
+  letter-spacing: 4px;
+}
+a{
+  color: $text-color;
+  margin: 0px;
+  transition: all 150ms linear;
+  &:hover, &:focus{
+    color: $color-blue;
+    text-decoration: none;
+    outline: none!important;
+  }
+  &:visited {
+    text-decoration: none;
+    color: $color-blue;
+  }
+}
+.logged-in{
+  nav, header{
+    top: 32px;
+  }
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: $font-family-headers;
+  color: #fff;
+  font-weight: 700;
+  margin: 0px;
+  line-height: 1.2;
+  letter-spacing: 5px;
+}
+h1 {
+  font-size: 80px;
+}
+ul, ol, address{
+  margin: 0px;
+  padding: 0px;
+}
+.appleFix{
+  overflow: hidden;
+  -webkit-overflow-scrolling:touch;
+}
+
+.anchor{
+  display: block;
+  height: 75px;
+  margin-top: -75px;
+  visibility: hidden;
+}
+
+// Custom css
+@import "partials/_elements";
+@import "partials/_header";
+@import "partials/_footer";
+@import "partials/_page-home";
+@import "partials/_page-404";
+@import "partials/_page-default";
+
+// Media
+@import "modules/_media";
