@@ -1,8 +1,12 @@
+@media only screen and (max-width: 1599px) {
+  
+}
+
 @media only screen and (max-width : 1441px) {
   body{
-    font-size: 14px;
+    font-size: 16px;
     p, a, li{
-      font-size: 14px;
+      font-size: 16px;
     }
   }
   .wpcf7 {
@@ -16,38 +20,54 @@
   }
 }
 
+@media only screen and (max-width: 1366px) {
+  
+}
+
 
 @media only screen and (min-width : 1199px) {
-  .hamburger{
-    display: none;
-  }
 }
 
 @media only screen and (max-width : 1199px) {
+  
 }
 
-@media only screen and (max-width : 991px) {
+@media only screen and (max-width: 991px) {
   .wpcf7 {
     .wpcf7-acceptance {
       text-align: left!important;
     }
+  }
+  
+  body {
+    font-size: 14px;
   }
 }
 
 @media only screen and (min-width: 991px) {
 }
 
+@media only screen and (min-width: 768px) {
+  .hamburger{
+    display: none;
+  }
+}
+ 
 @media only screen and (max-width : 767px) {
-
+  h1 {
+    font-size: 26px;
+  }
 }
 
 @media only screen and (max-width : 575px) {
   html{
     min-width: 320px;
   }
-  h1 {
-    font-size: 35px!important;
-  }
 }
 
+@media only screen and (max-width: 375px) {
+  h1 {
+    font-size: 24px;
+  }
+}
 

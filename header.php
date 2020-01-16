@@ -17,36 +17,47 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<script>
+    if (window.innerWidth > 1366) {
+        var head = document.getElementsByTagName('head')[0];
+
+        var s1 = document.createElement("script");
+        s1.type = "text/javascript";
+        s1.src = "portfolio/wp-content/themes/mateusz/js/cloud-mobile.js";
+        head.appendChild(s1);
+
+    }
+	</script>
 	<?php wp_head(); ?>
 </head>
-<header>
+<header class="animatedParent animateOnce">
 	<a href="<?php echo home_url(); ?>" class="navbar_brand">
 		<img src="<?php bloginfo('template_directory') ?>/img/logo_white.svg" alt="">
 	</a>
-	<nav>
+	<nav class="animated slower fadeInDown">
 		<ul>
 		<li>
-			<a href="#">
-				<span class="menu-item menu-item--base">O mnie</span>
-				<span class="menu-item menu-item--clone">O mnie</span>
+			<a href="#about">
+				<span class="menu-item menu-item--base"><span class="number">01. </span>O mnie</span>
+				<span class="menu-item menu-item--clone"><span class="number">01. </span>O mnie</span>
 			</a>
 		</li>
 		<li>
-			<a href="#">
-				<span class="menu-item menu-item--base">Umiejętności</span>
-				<span class="menu-item menu-item--clone">Umiejętności</span>
+			<a href="#skills">
+				<span class="menu-item menu-item--base"><span class="number">02. </span>Umiejętności</span>
+				<span class="menu-item menu-item--clone"><span class="number">02. </span>Umiejętności</span>
 			</a>
 		</li>
 		<li>
-			<a href="#">
-				<span class="menu-item menu-item--base">Doświadczenie</span>
-				<span class="menu-item menu-item--clone">Doświadczenie</span>
+			<a href="#experience">
+				<span class="menu-item menu-item--base"><span class="number">03. </span>Doświadczenie</span>
+				<span class="menu-item menu-item--clone"><span class="number">03. </span>Doświadczenie</span>
 			</a>
 		</li>
 		<li>
-			<a href="#">
-				<span class="menu-item menu-item--base">Kontakt</span>
-				<span class="menu-item menu-item--clone">Kontakt</span>
+			<a href="#contact">
+				<span class="menu-item menu-item--base"><span class="number">04. </span>Kontakt</span>
+				<span class="menu-item menu-item--clone"><span class="number">04. </span>Kontakt</span>
 			</a>
 		</li>
 		</ul>

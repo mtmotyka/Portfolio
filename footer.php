@@ -14,7 +14,7 @@
 	</div><!-- #content -->
 
 <footer>
-	<p class="design">Designed & implemented by <span>Mateusz Motyka</span></p>
+	<p class="design">Designed & Built by <span>Mateusz Motyka</span></p>
 	<p class="copy">Copyright © <?php echo the_date('Y') ?> Mateusz Motyka</p>
 </footer>
 </div><!-- #page -->

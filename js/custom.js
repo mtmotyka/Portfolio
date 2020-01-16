@@ -120,20 +120,20 @@
     var scroll = $(window).scrollTop();
     if(scroll > position) { // w dół
       $("#line_0").css('top', "-=" + 6 + "px");
-      $("#line_1").css('top', "+=" + 8 + "px");
-      $("#line_2").css('top', "+=" + 3 + "px");
+      $("#line_1").css('top', "+=" + 5 + "px");
+      $("#line_2").css('top', "+=" + 4 + "px");
       $("#line_3").css('top', "-=" + 3 + "px");
       $("#line_4").css('top', "+=" + 7 + "px");
       $("#line_5").css('top', "+=" + 4 + "px");
       $("#line_6").css('top', "-=" + 8 + "px");
     } else { //w górę
       $("#line_0").css('top', "+=" + 6 + "px");
-      $("#line_1").css('top', "-=" + 8 + "px");
-      $("#line_2").css('top', "-=" + 3 + "px");
+      $("#line_1").css('top', "-=" + 3 + "px");
+      $("#line_2").css('top', "-=" + 1 + "px");
       $("#line_3").css('top', "+=" + 3 + "px");
-      $("#line_4").css('top', "-=" + 7 + "px");
+      $("#line_4").css('top', "-=" + 4 + "px");
       $("#line_5").css('top', "-=" + 4 + "px");
-      $("#line_6").css('top', "+=" + 8 + "px");
+      $("#line_6").css('top', "+=" + 3 + "px");
     }
     position = scroll;
     setTimeout(scroll, 1000);

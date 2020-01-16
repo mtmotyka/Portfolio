@@ -146,6 +146,7 @@
       position: relative;
       background-size: 0px 0px;
       border-radius: 0px;
+      outline: none;
       /* by default, circle is of 0px */
       &:after {
         content: '';
@@ -216,7 +217,7 @@
         }
         &:after {
           width: 35px;
-          left: 39%;
+          left: 32%;
         }
       }
     }
@@ -423,6 +424,14 @@ input[type="checkbox"]:checked + span:before{
   }
 }
 
+.anchor {
+  display: block;
+  height: 125px;
+  margin-top: -125px;
+  visibility: hidden;
+  outline: none;
+}
+
 .tagcloud {
   font-size: 20px;
 }
@@ -441,7 +450,7 @@ input[type="checkbox"]:checked + span:before{
 }
 
 .glitch {
-  font-size: 144px!important;
+  font-size: 144px;
   font-weight: 100;
   color: #fff;
   font-family: $font-family-base;

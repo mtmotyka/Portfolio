@@ -28,10 +28,10 @@ header {
             color: #fff;
             font-family: $font-family-base;
             font-size: 16px;
-            font-weight: 500;
+            font-weight: 300;
             display: block;
             text-transform: lowercase;
-            letter-spacing: 4px;
+            letter-spacing: 2px;
             padding-bottom: 20px;
             will-change: transform;
             position: relative;
@@ -50,6 +50,13 @@ header {
             &:visited {
               color: #fff!important;
               text-decoration: none;
+            }
+            span.number {
+              color: $color-blue;
+              font-family: $font-family-extra;
+              font-weight: 300;
+              font-size: 12px;
+              letter-spacing: 1px;
             }
            .menu-item {
               display: inline-block;
@@ -110,11 +117,14 @@ header {
   }
   
   @media (max-width: 1199px) {
+  }
+
+  @media (max-width: 768px) {
     header {
       padding: 15px 30px;
       nav {
         transform: translate(100%, 0%);
-        background-color: $color-blue;
+        background-color: #2c2c36;
         position: fixed;
         top: 0;
         right: 0;
@@ -128,7 +138,27 @@ header {
           li {
             margin: 0px;
             a {
-              padding: 10px;
+              padding: 20px 45px;
+              .number {
+                display: block;
+                margin-bottom: 5px;
+              }
+              .menu-item--clone {
+                // display: none;
+              }
+              &:hover,
+              &:focus,
+              &:active {
+                  .menu-item--base {
+                    opacity: 1;
+                    visibility: visible;
+                    transform: none;
+                    color: $color-blue;
+                  }
+                 .menu-item--clone {
+                  display: none;
+                  }
+              }
             }
           }
         }
