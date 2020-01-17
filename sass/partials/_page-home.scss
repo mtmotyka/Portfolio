@@ -275,6 +275,19 @@
     .contact-form {
         .message {
             margin-top: 50px;
+            .wpcf7-form-control {
+                margin-bottom: 0px;
+            }
+            p.textarea-wrapper {
+                .wpcf7-form-control-wrap {
+                    .wpcf7-not-valid-tip {
+                        bottom: -25px;
+                    }
+                }
+            }
+        }
+        .wpcf7-validation-errors {
+            border: 2px solid #fffd8a;
         }
     }
 }
@@ -457,6 +470,12 @@
             .date-col {
                 p {
                     text-align: left;
+                    font-size: 15px;
+                }
+            }
+            .job-col {
+                .position {
+                    font-size: 24px;
                 }
             }
         }
@@ -507,7 +526,31 @@
                     }
                 }
             }
+            .wpcf7-form-control-wrap {
+                .wpcf7-not-valid-tip {
+                    bottom: -24px;
+                }
+            }
         }
+    }
+}
+
+.contact-form {
+    .message {
+        margin-top: 50px;
+        .wpcf7-form-control {
+            margin-bottom: 0px;
+        }
+        p.textarea-wrapper {
+            .wpcf7-form-control-wrap {
+                .wpcf7-not-valid-tip {
+                    bottom: -25px;
+                }
+            }
+        }
+    }
+    .wpcf7-validation-errors {
+        border: 2px solid #fffd8a;
     }
 }
 
@@ -581,6 +624,15 @@
             }
         }
     }
+    .home-section-4 {
+        .cv-single {
+            .job-col {
+                .position {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
     .home-section-5 {
         .wpcf7 {
             .btn_wrapper {
@@ -592,3 +644,24 @@
         }
     }
 }
+
+// .loader-wrapper {
+//     width: 100%;
+//     height: 100vh;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     background-color: $color-dark;
+//     text-align: center;
+//     .loader {
+//         font-size: 144px;
+//         position: absolute;
+//         top: 50%;
+//         animation: blinker 1s step-start infinite;
+//         @keyframes blinker {
+//             50% {
+//                 opacity: 0;
+//             }
+//         }
+//     }
+// }

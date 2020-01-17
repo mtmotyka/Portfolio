@@ -31,8 +31,8 @@
 	<?php wp_head(); ?>
 </head>
 <header class="animatedParent animateOnce">
-	<a href="<?php echo home_url(); ?>" class="navbar_brand">
-		<img src="<?php bloginfo('template_directory') ?>/img/logo_white.svg" alt="">
+	<a href="#home" class="navbar_brand animated slower fadeInDown">
+		mateusz_
 	</a>
 	<nav class="animated slower fadeInDown">
 		<ul>
