@@ -4,57 +4,69 @@
  *
  * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  *
- * @package mateusz
+ * 
  */
 
-get_header();
+
 ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
-
-			<section class="error-404 not-found">
-				<header class="page-header">
-					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'mateusz' ); ?></h1>
-				</header><!-- .page-header -->
-
-				<div class="page-content">
-					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'mateusz' ); ?></p>
-
-					<?php
-					get_search_form();
-
-					the_widget( 'WP_Widget_Recent_Posts' );
-					?>
-
-					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'mateusz' ); ?></h2>
-						<ul>
-							<?php
-							wp_list_categories( array(
-								'orderby'    => 'count',
-								'order'      => 'DESC',
-								'show_count' => 1,
-								'title_li'   => '',
-								'number'     => 10,
-							) );
-							?>
-						</ul>
-					</div><!-- .widget -->
-
-					<?php
-					/* translators: %1$s: smiley */
-					$mateusz_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'mateusz' ), convert_smilies( ':)' ) ) . '</p>';
-					the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$mateusz_archive_content" );
-
-					the_widget( 'WP_Widget_Tag_Cloud' );
-					?>
-
-				</div><!-- .page-content -->
-			</section><!-- .error-404 -->
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-<?php
-get_footer();
+<!doctype html>
+<html <?php language_attributes(); ?>>
+<head>
+	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta name="robots" content="noindex">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<?php wp_head(); ?>
+</head>
+<header class="animatedParent animateOnce">
+	<a href="/#home" class="navbar_brand animated slower fadeInDown">
+		mateusz_
+	</a>
+	<nav class="animated slower fadeInDown">
+		<ul>
+		<li>
+			<a href="/#about">
+				<span class="menu-item menu-item--base"><span class="number">01. </span>O mnie</span>
+				<span class="menu-item menu-item--clone"><span class="number">01. </span>O mnie</span>
+			</a>
+		</li>
+		<li>
+			<a href="/#skills">
+				<span class="menu-item menu-item--base"><span class="number">02. </span>Umiejętności</span>
+				<span class="menu-item menu-item--clone"><span class="number">02. </span>Umiejętności</span>
+			</a>
+		</li>
+		<li>
+			<a href="/#experience">
+				<span class="menu-item menu-item--base"><span class="number">03. </span>Doświadczenie</span>
+				<span class="menu-item menu-item--clone"><span class="number">03. </span>Doświadczenie</span>
+			</a>
+		</li>
+		<li>
+			<a href="/#contact">
+				<span class="menu-item menu-item--base"><span class="number">04. </span>Kontakt</span>
+				<span class="menu-item menu-item--clone"><span class="number">04. </span>Kontakt</span>
+			</a>
+		</li>
+		</ul>
+	</nav>
+	<button type="button" class="hamburger hamburger--squeeze hamburger_nav">
+		<span class="hamburger-box">
+			<span class="hamburger-inner"></span>
+		</span>
+	</button>
+</header>
+<body>
+<section class="error-section">
+	<div class="error-number">
+		<span class="glitch" data-text="404">404</span>
+	</div>
+	<div class="error-info">
+		<h2>Ups... Taka strona nie istnieje</h2>
+		<a href="/" class="btn_custom_blue btn_big">Strona główna</a>
+	</div>
+</section>
+<?php wp_footer(); ?>
+</body>
+</html>

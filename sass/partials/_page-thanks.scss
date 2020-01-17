@@ -1,4 +1,4 @@
-.error-section {
+.thanks-section {
     height: 100vh;
     width: 100%;
     display: flex;
@@ -7,15 +7,7 @@
     flex-direction: column;
     min-height: 568px;
     overflow: hidden;
-    .error-number {
-        span {
-            font-size: 144px;
-            font-weight: 900;
-            text-align: center;
-            letter-spacing: 10px;
-        }
-    }
-    .error-info {
+    .message-info {
         text-align: center;
         h2 {
             margin-bottom: 50px;

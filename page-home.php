@@ -36,7 +36,7 @@ get_header(); ?>
     <div class="row animatedParent animateOnce">
         <div class="col-md-7 first-col animated slower fadeIn">
             <h1>O mnie</h1><span class="line"></span>
-            <p>Jestem Mateusz, Front-End Developer i były UX Designer. Specjalizuje się w tworzeniu stron internetowych. Od pół roku pracuję jako Dev. Dzięki rocznemu doświadczeniu jako UX Designer mogę również spojrzeć na stronę nie tylko okiem Deva i wdrożyć ją z myślą o użytkownikach.</p>
+            <p>Cześć! Mam na imię Mateusz i jestem Front-End Developerem oraz byłym UX Designer. Specjalizuje się w tworzeniu stron internetowych. Od pół roku pracuję jako Dev. Dzięki rocznemu doświadczeniu jako UX Designer mogę również spojrzeć na stronę nie tylko okiem Deva i wdrożyć ją z myślą o użytkownikach.</p>
             <p>Aktualnie jestem skupiony na nauce JavaScriptu, aby mieć mocne fundamenty przed rozpoczęciem nauki Reacta.</p>
         </div>
         <div class="col-md-5 second-col animated slower fadeIn delay-250">
