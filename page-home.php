@@ -126,6 +126,7 @@ get_header(); ?>
         <div class="col-md-6 contact-text animated slower fadeIn">
             <h1>Kontakt</h1>
             <p>Potrzebujesz strony? Chcesz porozmawiać o współpracy? Napisz do mnie. </p>
+            <p class="mail"><a href="mailto:mtmotyka@gmail.com">mtmotyka@gmail.com</a></p>
             <p class="social">Znajdziesz mnie również na:</p>
             <div class="social-icons">
                 <a href="https://www.linkedin.com/in/mateusz-motyka-b3a047160/" class="social-icon linked-ico" target="_blank"></a>

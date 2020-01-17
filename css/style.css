@@ -7154,6 +7154,8 @@ footer {
       color: #64DCDC;
       letter-spacing: 1px;
       font-weight: 300; }
+  .home-section-5 .contact-text .mail {
+    margin-top: 15px; }
   .home-section-5 .contact-text p {
     padding-right: 15%; }
   .home-section-5 .contact-text .social {
