@@ -128,9 +128,9 @@ get_header(); ?>
             <p>Potrzebujesz strony? Chcesz porozmawiać o współpracy? Napisz do mnie. </p>
             <p class="social">Znajdziesz mnie również na:</p>
             <div class="social-icons">
-                <a href="#" class="social-icon linked-ico"></a>
-                <a href="#" class="social-icon bit-ico"></a>
-                <a href="#" class="social-icon behance-ico"></a>
+                <a href="https://www.linkedin.com/in/mateusz-motyka-b3a047160/" class="social-icon linked-ico" target="_blank"></a>
+                <a href="https://github.com/mtmotyka" class="social-icon bit-ico" target="_blank"></a>
+                <a href="https://www.behance.net/mtmotykadb52" class="social-icon behance-ico" target="_blank"></a>
             </div>
         </div>
         <div class="col-md-6 contact-form animated slower fadeIn delay-250">
