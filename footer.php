@@ -15,11 +15,13 @@
 
 <footer>
 	<p class="design">Designed & Built by <span>Mateusz Motyka</span></p>
-	<p class="copy">Copyright © <?php echo the_date('Y') ?> Mateusz Motyka</p>
+	<p class="copy">Copyright © 2020 DevMatte Mateusz Motyka</p>
 </footer>
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7013977.js"></script>
+<!-- End of HubSpot Embed Code -->
 </body>
 </html>

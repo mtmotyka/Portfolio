@@ -17,22 +17,31 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-156416419-1"></script>
 	<script>
-    if (window.innerWidth > 1366) {
-        var head = document.getElementsByTagName('head')[0];
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
 
-        var s1 = document.createElement("script");
-        s1.type = "text/javascript";
-        s1.src = "portfolio/wp-content/themes/mateusz/js/cloud-mobile.js";
-        head.appendChild(s1);
-
-    }
+	gtag('config', 'UA-156416419-1');
+	</script>
+	<!-- Hotjar Tracking Code for https://mateuszmotyka.pl -->
+	<script>
+		(function(h,o,t,j,a,r){
+			h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+			h._hjSettings={hjid:1648801,hjsv:6};
+			a=o.getElementsByTagName('head')[0];
+			r=o.createElement('script');r.async=1;
+			r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+			a.appendChild(r);
+		})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 	</script>
 	<?php wp_head(); ?>
 </head>
 <header class="animatedParent animateOnce">
-	<a href="<?php echo home_url(); ?>" class="navbar_brand">
-		<img src="<?php bloginfo('template_directory') ?>/img/logo_white.svg" alt="">
+	<a href="#home" class="navbar_brand animated slower fadeInDown">
+		mateusz_
 	</a>
 	<nav class="animated slower fadeInDown">
 		<ul>

@@ -135,91 +135,27 @@
       }
     }
     .wpcf7-submit {
-      background-color: transparent;
+      display: inline-block;
       color: #fff!important;
       border: 1px solid #fff;
-      padding: 14px 47px 17px 47px;
-      font-size: 14px;
+      padding: 15px 25px 17px 25px;
+      font-size: 20px;
       text-transform: uppercase;
-      font-weight: 400;
+      font-weight: 300;
       text-align: center;
       position: relative;
-      background-size: 0px 0px;
+      letter-spacing: 9px;
+      background: transparent;
       border-radius: 0px;
-      outline: none;
-      /* by default, circle is of 0px */
-      &:after {
-        content: '';
-        position: absolute;
-        width: 98px;
-        height: 1px;
-        background-color: #fff;
-        top: 50%;
-        left: 89%;
-        transition: all .18s ease-in-out;
-      }
-      &:before {
-        content:'';
-        position:absolute;
-        opacity:0;
-        top:-20px;
-        left:-20px;
-        right:-20px;
-        bottom:-20px;
-        background: radial-gradient( farthest-side, transparent calc(100% - 3px), #fff calc(100% - 2px) calc(100% - 1px), transparent 100%) fixed/* Fixed to the screen*/ no-repeat;
-        background-size:66px 66px;
-        background-position:inherit;
-        pointer-events:none;
-      }
       &:hover {
-        border: 1px solid transparent;
-        &:before {
-          opacity:1;
-        }
-        &:after {
-          width: 35px;
-          left: 0%;
-        }
+        background-color: transparentize($color: #fff, $amount: 0.9);
       }
     }
     .btn_wrapper {
       position: relative;
       display: block;
       text-align: center;
-      margin: 20px auto;
-      &:after {
-        content: '';
-        position: absolute;
-        width: 65px;
-        height: 1px;
-        background-color: #fff;
-        top: 48%;
-        left: 55%;
-        transition: all .18s ease-in-out;
-      }
-      &:before {
-        content:'';
-        position:absolute;
-        opacity:0;
-        top:-66px;
-        left:-66px;
-        right:-66px;
-        bottom:-66px;
-        background: radial-gradient( farthest-side, transparent calc(100% - 3px), #fff calc(100% - 2px) calc(100% - 1px), transparent 100%) fixed/* Fixed to the screen*/ no-repeat;
-        background-size:66px 66px;
-        background-position:inherit;
-        pointer-events:none;
-      }
-      &:hover {
-        border: 1px solid transparent;
-        &:before {
-          opacity:1;
-        }
-        &:after {
-          width: 35px;
-          left: 32%;
-        }
-      }
+      margin: 35px auto 20px;
     }
     .wpcf7-form-control-wrap {
       position: relative;
@@ -227,11 +163,12 @@
       text-align: left;
       .wpcf7-not-valid-tip {
         position: absolute;
-        bottom: -25px;
+        bottom: -47px;
         left: 0;
         right: 0;
         margin: 0 auto;
         font-size: 12px;
+        color: #e33d3d;
       }
     }
     .wpcf7-response-output {
@@ -318,7 +255,7 @@ input[type="checkbox"]:checked + span:before{
   transform: rotate(45deg);
 }
 
-.btn_custom_blue {
+.btn-custom{
   display: inline-block;
   color: $color-blue!important;
   border: 1px solid $color-blue;
@@ -328,99 +265,24 @@ input[type="checkbox"]:checked + span:before{
   font-weight: 300;
   text-align: center;
   position: relative;
-  background-size: 0px 0px;
   letter-spacing: 9px;
-  /* by default, circle is of 0px */
-  .circle {
-    position: absolute;
-    display: none;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%);
-    border: 2px solid red;
-  }
-  &:after {
-    content: '';
-    position: absolute;
-    width: 65px;
-    height: 1px;
-    background-color: $color-blue;
-    top: 50%;
-    left: 89%;
-    transition: all .18s ease-in-out;
-  }
-  &:before {
-    content:'';
-    position:absolute;
-    opacity:0;
-    top:-66px;
-    left:-66px;
-    right:-66px;
-    bottom:-66px;
-    background: radial-gradient( farthest-side, transparent calc(100% - 3px), $color-blue calc(100% - 2px) calc(100% - 1px), transparent 100%) fixed/* Fixed to the screen*/ no-repeat;
-    background-size:66px 66px;
-    background-position:inherit;
-    pointer-events:none;
-  }
   &:hover {
-    border: 1px solid transparent;
-    &:before {
-      opacity:1;
-    }
-    &:after {
-      width: 35px;
-      left: 0%;
-    }
+    background-color: transparentize($color: $color-blue, $amount: 0.9);
   }
 }
-
-.btn_custom_white {
+.btn-custom-white{
+  display: inline-block;
   color: #fff!important;
   border: 1px solid #fff;
-  padding: 14px 47px 17px 47px;
-  font-size: 14px;
+  padding: 12px 40px 14px 40px;
+  font-size: 20px;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 300;
   text-align: center;
   position: relative;
-  &:after {
-    content: '';
-    position: absolute;
-    width: 98px;
-    height: 1px;
-    background-color: #fff;
-    top: 50%;
-    left: 89%;
-    transition: all .18s ease-in-out;
-  }
-  &:before {
-    content: '';
-    position: absolute;
-    width: 126px;
-    height: 126px;
-    border-radius: 50%;
-    border: 1px solid #fff;
-    bottom: -42%;
-    right: 29%;
-    opacity: 0;
-    transition: all .18s ease-in-out;
-  }
+  letter-spacing: 9px;
   &:hover {
-    border: 0px;
-    &:before {
-      opacity: 1;
-      width: 70px;
-      height: 70px;
-      bottom: -17%;
-      right: 57%;
-    }
-    &:after {
-      width: 35px;
-      left: 0%;
-    }
+    background-color: transparentize($color: #fff, $amount: 0.9);
   }
 }
 

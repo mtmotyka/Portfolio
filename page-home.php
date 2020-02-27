@@ -27,7 +27,7 @@ get_header(); ?>
         <span><h1 class="glitch animated slow fadeInUpShort" data-text="mateusz">mateusz</h1></span>
         <h5 class="animated slow fadeInUpShort delay-250">FRONT-END DEVELOPER</h5>
         <h6 class="animated slow fadeInUpShort delay-500">EX UX DESIGNER</h6>
-        <a href="#about" class="btn_custom_blue circle btn_big animated slow fadeIn delay-500">START</a>
+        <a href="#about" class="btn-custom animated slow fadeIn delay-500">START</a>
     </div>
 </section>
 
@@ -36,7 +36,7 @@ get_header(); ?>
     <div class="row animatedParent animateOnce">
         <div class="col-md-7 first-col animated slower fadeIn">
             <h1>O mnie</h1><span class="line"></span>
-            <p>Jestem Mateusz, Front-End Developer i były UX Designer. Specjalizuje się w tworzeniu stron internetowych. Od pół roku pracuję jako Dev. Dzięki rocznemu doświadczeniu jako UX Designer mogę również spojrzeć na stronę nie tylko okiem Deva i wdrożyć ją z myślą o użytkownikach.</p>
+            <p>Cześć! Mam na imię Mateusz i jestem Front-End Developerem oraz byłym UX Designer. Specjalizuje się w tworzeniu stron internetowych. Od pół roku pracuję jako Dev. Dzięki rocznemu doświadczeniu jako UX Designer mogę również spojrzeć na stronę nie tylko okiem Deva i wdrożyć ją z myślą o użytkownikach.</p>
             <p>Aktualnie jestem skupiony na nauce JavaScriptu, aby mieć mocne fundamenty przed rozpoczęciem nauki Reacta.</p>
         </div>
         <div class="col-md-5 second-col animated slower fadeIn delay-250">
@@ -84,37 +84,37 @@ get_header(); ?>
     <h1>Doświadczenie</h1>
    <div class="cv-single">
     <div class="row animatedParent animateOnce">
-            <div class="col-md-3 date-col animated fadeIn">
+            <div class="col-md-3 company-col animated fadeIn">
+                <h4 class="company">ADream</h4>
                 <p class="date">09.2019-current</p>
             </div>
-            <div class="col-md-9 job-col animated fadeIn">
-                <p class="company">ADream Group</p>
-                <p class="position">Front-End Developer</p>
-                <p class="desc">Po niecałym roku jako UX Designer stwierdziłem, że nie zadowala mnie to co robię, a od zawsze miałem ciąg do programowanie. Postanowiłem zmienić stanowisko na Front-End Developera i od września 2019 roku zajmuje się już tylko tym. Podczas kodowania stron często korzystam ze swojego dośwadczenia UXa, dzięki czemu strony są jeszcze lepsze w odbiorze.</p>
+            <div class="col-md-9 desc-col animated fadeIn">
+                <h4 class="title">Front-End Developer</h4>
+                <p class="desc">Po niecałym roku jako UX Designer stwierdziłem, że nie zadowala mnie to co robię, a od zawsze miałem ciąg do programowanie. Postanowiłem zmienić stanowisko na Front-End Developera i od września 2019 roku zajmuje się już tylko tym. Podczas kodowania stron często korzystam ze swojego dośwadczenia UXa, dzięki któremu lepiej dogaduje się i rozumiem z zespołem grafików i UX Designerów, a przez to strony są jeszcze lepsze w odbiorze.</p>
             </div>
         </div>
    </div>
    <div class="cv-single">
     <div class="row animatedParent animateOnce">
-            <div class="col-md-3 date-col animated fadeIn">
+            <div class="col-md-3 company-col animated fadeIn">
+                <h4 class="company">ADream</h4>
                 <p class="date">11.2018-09.2019</p>
             </div>
-            <div class="col-md-9 job-col animated fadeIn">
-                <p class="company">ADream Group</p>
-                <p class="position">UX Designer</p>
+            <div class="col-md-9 desc-col animated fadeIn">
+                <h4 class="title">UX Designer</h4>
                 <p class="desc">W listopadzie 2018 roku dostałem się na staż w Agencji Interaktywnej ADream na stanowisko UX Designer. Po 3 miesiącach rozpocząłem pracę na pełen etat na tym samym stanowisku. W pracy głównie zajmowałem się tworzeniem makiet pod nowe strony, a od czasu do czasu współprowadziłem warsztat z klientami.</p>
             </div>
         </div>
    </div>
    <div class="cv-single">
     <div class="row animatedParent animateOnce">
-            <div class="col-md-3 date-col animated fadeIn">
-                <p class="date">10.2015-06.2019</p>
+            <div class="col-md-3 company-col animated fadeIn">
+                <h4 class="company">WSZiB</h4>
+                <p class="date">10.2015 - 06.2019</p>
             </div>
-            <div class="col-md-9 job-col animated fadeIn">
-                <p class="company">Wyższa Szkoła Zarządzania i Bankowości w Krakowie</p>
-                <p class="position">Studia na kierunku informatyka</p>
-                <p class="desc">W 2015 roku rozpocząłem studia na kierunku informatyka. Kończyłem je na specjalizacji animacja i grafika komputerowa, jednak jak się później okazało to nie to co chciałem robić. W czerwcu 2019 roku obroniłem pracę inżynierską i uzyskałem tytuł inżyniera</p>
+            <div class="col-md-9 desc-col animated fadeIn">
+                <h4 class="title">Inżynier</h4>
+                <p class="desc">W 2015 roku rozpocząłem studia na uczelni Wyższa Szkoła Zarządzania i Bankowości w Krakowie, na kierunku informatyka. Kończyłem je na specjalizacji animacja i grafika komputerowa, jednak jak się później okazało to nie to co chciałem robić. W czerwcu 2019 roku obroniłem pracę inżynierską i uzyskałem tytuł inżyniera</p>
             </div>
         </div>
    </div>
@@ -126,11 +126,12 @@ get_header(); ?>
         <div class="col-md-6 contact-text animated slower fadeIn">
             <h1>Kontakt</h1>
             <p>Potrzebujesz strony? Chcesz porozmawiać o współpracy? Napisz do mnie. </p>
+            <p class="mail"><a href="mailto:mtmotyka@gmail.com">mtmotyka@gmail.com</a></p>
             <p class="social">Znajdziesz mnie również na:</p>
             <div class="social-icons">
-                <a href="#" class="social-icon linked-ico"></a>
-                <a href="#" class="social-icon bit-ico"></a>
-                <a href="#" class="social-icon behance-ico"></a>
+                <a href="https://www.linkedin.com/in/mateusz-motyka-b3a047160/" class="social-icon linked-ico" target="_blank"></a>
+                <a href="https://github.com/mtmotyka" class="social-icon bit-ico" target="_blank"></a>
+                <a href="https://www.behance.net/mtmotykadb52" class="social-icon behance-ico" target="_blank"></a>
             </div>
         </div>
         <div class="col-md-6 contact-form animated slower fadeIn delay-250">
@@ -138,5 +139,9 @@ get_header(); ?>
         </div>
     </div>
 </section>
+
+<!-- <div class="loader-wrapper">
+    <span class="loader">_</span>
+</div> -->
 
 <?php get_footer();

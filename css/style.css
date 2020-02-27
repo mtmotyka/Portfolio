@@ -6084,91 +6084,37 @@ ul, ol, address {
       font-weight: 700;
       text-decoration: underline; }
 .wpcf7 .wpcf7-submit {
-  background-color: transparent;
+  display: inline-block;
   color: #fff !important;
   border: 1px solid #fff;
-  padding: 14px 47px 17px 47px;
-  font-size: 14px;
+  padding: 15px 25px 17px 25px;
+  font-size: 20px;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 300;
   text-align: center;
   position: relative;
-  background-size: 0px 0px;
-  border-radius: 0px;
-  outline: none;
-  /* by default, circle is of 0px */ }
-  .wpcf7 .wpcf7-submit:after {
-    content: '';
-    position: absolute;
-    width: 98px;
-    height: 1px;
-    background-color: #fff;
-    top: 50%;
-    left: 89%;
-    transition: all .18s ease-in-out; }
-  .wpcf7 .wpcf7-submit:before {
-    content: '';
-    position: absolute;
-    opacity: 0;
-    top: -20px;
-    left: -20px;
-    right: -20px;
-    bottom: -20px;
-    background: radial-gradient(farthest-side, transparent calc(100% - 3px), #fff calc(100% - 2px) calc(100% - 1px), transparent 100%) fixed no-repeat;
-    background-size: 66px 66px;
-    background-position: inherit;
-    pointer-events: none; }
+  letter-spacing: 9px;
+  background: transparent;
+  border-radius: 0px; }
   .wpcf7 .wpcf7-submit:hover {
-    border: 1px solid transparent; }
-    .wpcf7 .wpcf7-submit:hover:before {
-      opacity: 1; }
-    .wpcf7 .wpcf7-submit:hover:after {
-      width: 35px;
-      left: 0%; }
+    background-color: rgba(255, 255, 255, 0.1); }
 .wpcf7 .btn_wrapper {
   position: relative;
   display: block;
   text-align: center;
-  margin: 20px auto; }
-  .wpcf7 .btn_wrapper:after {
-    content: '';
-    position: absolute;
-    width: 65px;
-    height: 1px;
-    background-color: #fff;
-    top: 48%;
-    left: 55%;
-    transition: all .18s ease-in-out; }
-  .wpcf7 .btn_wrapper:before {
-    content: '';
-    position: absolute;
-    opacity: 0;
-    top: -66px;
-    left: -66px;
-    right: -66px;
-    bottom: -66px;
-    background: radial-gradient(farthest-side, transparent calc(100% - 3px), #fff calc(100% - 2px) calc(100% - 1px), transparent 100%) fixed no-repeat;
-    background-size: 66px 66px;
-    background-position: inherit;
-    pointer-events: none; }
-  .wpcf7 .btn_wrapper:hover {
-    border: 1px solid transparent; }
-    .wpcf7 .btn_wrapper:hover:before {
-      opacity: 1; }
-    .wpcf7 .btn_wrapper:hover:after {
-      width: 35px;
-      left: 32%; }
+  margin: 35px auto 20px; }
 .wpcf7 .wpcf7-form-control-wrap {
   position: relative;
   display: block;
   text-align: left; }
   .wpcf7 .wpcf7-form-control-wrap .wpcf7-not-valid-tip {
     position: absolute;
-    bottom: -25px;
+    bottom: -47px;
     left: 0;
     right: 0;
     margin: 0 auto;
-    font-size: 12px; }
+    font-size: 12px;
+    color: #e33d3d; }
 .wpcf7 .wpcf7-response-output {
   color: #fff;
   font-size: 12px;
@@ -6244,7 +6190,7 @@ input[type="checkbox"]:checked + span:before {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg); }
 
-.btn_custom_blue {
+.btn-custom {
   display: inline-block;
   color: #64DCDC !important;
   border: 1px solid #64DCDC;
@@ -6254,88 +6200,23 @@ input[type="checkbox"]:checked + span:before {
   font-weight: 300;
   text-align: center;
   position: relative;
-  background-size: 0px 0px;
-  letter-spacing: 9px;
-  /* by default, circle is of 0px */ }
-  .btn_custom_blue .circle {
-    position: absolute;
-    display: none;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%);
-    border: 2px solid red; }
-  .btn_custom_blue:after {
-    content: '';
-    position: absolute;
-    width: 65px;
-    height: 1px;
-    background-color: #64DCDC;
-    top: 50%;
-    left: 89%;
-    transition: all .18s ease-in-out; }
-  .btn_custom_blue:before {
-    content: '';
-    position: absolute;
-    opacity: 0;
-    top: -66px;
-    left: -66px;
-    right: -66px;
-    bottom: -66px;
-    background: radial-gradient(farthest-side, transparent calc(100% - 3px), #64DCDC calc(100% - 2px) calc(100% - 1px), transparent 100%) fixed no-repeat;
-    background-size: 66px 66px;
-    background-position: inherit;
-    pointer-events: none; }
-  .btn_custom_blue:hover {
-    border: 1px solid transparent; }
-    .btn_custom_blue:hover:before {
-      opacity: 1; }
-    .btn_custom_blue:hover:after {
-      width: 35px;
-      left: 0%; }
+  letter-spacing: 9px; }
+  .btn-custom:hover {
+    background-color: rgba(100, 220, 220, 0.1); }
 
-.btn_custom_white {
+.btn-custom-white {
+  display: inline-block;
   color: #fff !important;
   border: 1px solid #fff;
-  padding: 14px 47px 17px 47px;
-  font-size: 14px;
+  padding: 12px 40px 14px 40px;
+  font-size: 20px;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 300;
   text-align: center;
-  position: relative; }
-  .btn_custom_white:after {
-    content: '';
-    position: absolute;
-    width: 98px;
-    height: 1px;
-    background-color: #fff;
-    top: 50%;
-    left: 89%;
-    transition: all .18s ease-in-out; }
-  .btn_custom_white:before {
-    content: '';
-    position: absolute;
-    width: 126px;
-    height: 126px;
-    border-radius: 50%;
-    border: 1px solid #fff;
-    bottom: -42%;
-    right: 29%;
-    opacity: 0;
-    transition: all .18s ease-in-out; }
-  .btn_custom_white:hover {
-    border: 0px; }
-    .btn_custom_white:hover:before {
-      opacity: 1;
-      width: 70px;
-      height: 70px;
-      bottom: -17%;
-      right: 57%; }
-    .btn_custom_white:hover:after {
-      width: 35px;
-      left: 0%; }
+  position: relative;
+  letter-spacing: 9px; }
+  .btn-custom-white:hover {
+    background-color: rgba(255, 255, 255, 0.1); }
 
 .anchor {
   display: block;
@@ -6842,10 +6723,11 @@ header {
   justify-content: space-between;
   padding: 35px 8.33%; }
   header .navbar_brand {
-    display: inline-block; }
-    header .navbar_brand img,
-    header .navbar_brand svg {
-      height: 65px; }
+    display: inline-block;
+    padding-bottom: 20px;
+    color: #fff; }
+    header .navbar_brand:hover {
+      color: #64DCDC; }
   header nav {
     z-index: 999; }
     header nav ul {
@@ -6921,9 +6803,16 @@ header {
     margin: 0px 0 0 29px; }
     header nav ul li a {
       font-size: 16px; } }
+@media (max-width: 991px) {
+  header nav ul li {
+    margin-left: 20px; }
+    header nav ul li:first-child {
+      margin-left: 0; } }
 @media (max-width: 768px) {
   header {
-    padding: 15px 30px; }
+    padding: 18px 30px; }
+    header .navbar_brand {
+      padding-bottom: 0px; }
     header nav {
       transform: translate(100%, 0%);
       background-color: #2c2c36;
@@ -6955,7 +6844,7 @@ header {
         transform: translate(0%, 0%);
         box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15); }
     header.shrink {
-      padding: 10px 30px; } }
+      padding: 15px 30px; } }
 @media (max-width: 575px) {
   header .navbar_brand img {
     height: 40px; } }
@@ -7096,14 +6985,10 @@ footer {
       color: #64DCDC;
       letter-spacing: 1px;
       font-weight: 300; }
-  .home-section-4 .cv-single .date-col p {
-    font-size: 16px;
-    text-align: center;
-    padding-right: 20px; }
-  .home-section-4 .cv-single .job-col {
+  .home-section-4 .cv-single .company-col {
     position: relative;
     padding-bottom: 75px; }
-    .home-section-4 .cv-single .job-col:before {
+    .home-section-4 .cv-single .company-col:before {
       content: '';
       position: absolute;
       top: 10px;
@@ -7111,28 +6996,30 @@ footer {
       width: 1px;
       height: 100%;
       background-color: #64DCDC; }
-    .home-section-4 .cv-single .job-col:after {
+    .home-section-4 .cv-single .company-col:after {
       content: '';
       position: absolute;
-      top: 10px;
+      top: 27px;
       left: -55px;
       height: 11px;
       width: 11px;
       background-color: #64DCDC;
       border-radius: 50%; }
-    .home-section-4 .cv-single .job-col .company {
-      font-size: 14px;
-      font-weight: 300;
-      font-family: "SF Mono", sans-serif;
-      font-weight: 300;
-      opacity: 0.3; }
-    .home-section-4 .cv-single .job-col .position {
+    .home-section-4 .cv-single .company-col h4.company {
       font-size: 26px;
-      font-weight: 600;
-      margin-bottom: 10px;
-      color: #fff; }
-    .home-section-4 .cv-single .job-col .desc {
-      font-size: 16px; }
+      font-weight: 300; }
+    .home-section-4 .cv-single .company-col p.date {
+      font-size: 14px;
+      color: #64DCDC;
+      font-weight: 100;
+      font-family: "SF Mono", sans-serif; }
+  .home-section-4 .cv-single .desc-col h4.title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 10px; }
+  .home-section-4 .cv-single .desc-col p.desc {
+    font-size: 16px;
+    padding-bottom: 100px; }
 
 .home-section-5 {
   padding: 300px 15px 200px; }
@@ -7145,6 +7032,8 @@ footer {
       color: #64DCDC;
       letter-spacing: 1px;
       font-weight: 300; }
+  .home-section-5 .contact-text .mail {
+    margin-top: 15px; }
   .home-section-5 .contact-text p {
     padding-right: 15%; }
   .home-section-5 .contact-text .social {
@@ -7197,11 +7086,29 @@ footer {
           bottom: 3px; }
   .home-section-5 .contact-form .message {
     margin-top: 50px; }
+    .home-section-5 .contact-form .message .wpcf7-form-control {
+      margin-bottom: 0px; }
+    .home-section-5 .contact-form .message p.textarea-wrapper .wpcf7-form-control-wrap .wpcf7-not-valid-tip {
+      bottom: -25px; }
+  .home-section-5 .contact-form .wpcf7-validation-errors {
+    border: 2px solid #fffd8a; }
 
 /* Media */
+@media only screen and (max-width: 1440px) {
+  .home-section-4 .cv-single .company-col:after {
+    left: -15px; }
+  .home-section-4 .cv-single .company-col:before {
+    left: -10px; } }
 @media only screen and (max-width: 1366px) {
   .home-section-3 .cloud-tag {
-    font-size: 15px; } }
+    font-size: 15px; }
+
+  .home-section-4 .cv-single .company-col {
+    padding-left: 70px; }
+    .home-section-4 .cv-single .company-col:after {
+      left: 35px; }
+    .home-section-4 .cv-single .company-col:before {
+      left: 40px; } }
 @media only screen and (max-width: 1199px) {
   .home-section-1 .inner-home .glitch {
     font-size: 112px; }
@@ -7219,8 +7126,17 @@ footer {
       height: 100% !important;
       font-size: 14px !important; }
 
-  .home-section-4 .cv-single .date-col p {
-    padding-right: 45px; }
+  .home-section-4 .cv-single .company-col {
+    padding-left: 15px; }
+    .home-section-4 .cv-single .company-col:after {
+      top: 22px;
+      left: -8px; }
+    .home-section-4 .cv-single .company-col:before {
+      left: -3px; }
+    .home-section-4 .cv-single .company-col h4.company {
+      font-size: 22px; }
+  .home-section-4 .cv-single .desc-col h4.title {
+    font-size: 24px; }
 
   .home-section-5 .wpcf7 .btn_wrapper:before {
     top: -30px;
@@ -7247,6 +7163,8 @@ footer {
 
   .home-section-4 {
     padding-top: 250px; }
+    .home-section-4 .cv-single .company-col:before, .home-section-4 .cv-single .company-col:after {
+      display: none; }
 
   .home-section-5 {
     padding-top: 250px; }
@@ -7304,11 +7222,21 @@ footer {
       height: 1px;
       width: 70px;
       background-color: #64DCDC; }
-    .home-section-4 .cv-single .date-col p {
-      text-align: left; }
+    .home-section-4 .cv-single:last-of-type:after {
+      display: none;
+      margin-bottom: 0; }
+    .home-section-4 .cv-single:last-of-type .desc-col p.desc {
+      padding-bottom: 0; }
+    .home-section-4 .cv-single .company-col {
+      padding-bottom: 20px; }
+      .home-section-4 .cv-single .company-col h4.company {
+        font-size: 15px;
+        opacity: 0.6; }
+      .home-section-4 .cv-single .company-col p.date {
+        font-size: 12px; }
 
   .home-section-5 {
-    padding: 250px 15px 120px; }
+    padding: 200px 15px 120px; }
     .home-section-5 .contact-text p.social {
       margin-top: 35px; }
     .home-section-5 .contact-text .social-icons .social-icon {
@@ -7318,17 +7246,21 @@ footer {
     .home-section-5 .contact-form {
       padding-top: 80px; } }
 @media only screen and (max-width: 575px) {
-  .home-section-4 .cv-single .job-col .position {
-    line-height: 1.5;
-    margin-bottom: 18px; }
-  .home-section-4 .cv-single .job-col .company {
-    line-height: 1.3;
-    margin: 10px 0 5px; }
-
   .home-section-5 .contact-form .wpcf7 .row_inputs .col-sm-6,
   .home-section-5 .contact-form .wpcf7 .row_inputs .col-sm-12 {
     padding-top: 35px;
-    margin-top: 0px; } }
+    margin-top: 0px; }
+  .home-section-5 .contact-form .wpcf7-form-control-wrap .wpcf7-not-valid-tip {
+    bottom: -24px; } }
+.contact-form .message {
+  margin-top: 50px; }
+  .contact-form .message .wpcf7-form-control {
+    margin-bottom: 0px; }
+  .contact-form .message p.textarea-wrapper .wpcf7-form-control-wrap .wpcf7-not-valid-tip {
+    bottom: -25px; }
+.contact-form .wpcf7-validation-errors {
+  border: 2px solid #fffd8a; }
+
 @media only screen and (max-width: 479px) {
   .home-section-1 .inner-home .glitch {
     font-size: 56px;
@@ -7359,9 +7291,34 @@ footer {
   .home-section-3 .row .row-list ul li {
     font-size: 15px; }
 
+  .home-section-4 .cv-single .job-col .position {
+    font-size: 22px; }
+
   .home-section-5 .wpcf7 .btn_wrapper:after {
     width: 45px;
     left: 63%; } }
+.error-section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 568px;
+  overflow: hidden; }
+  .error-section .error-number span {
+    font-size: 144px;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 10px; }
+  .error-section .error-info {
+    text-align: center; }
+    .error-section .error-info h2 {
+      margin-bottom: 50px;
+      font-weight: 400; }
+    .error-section .error-info a {
+      letter-spacing: 3px; }
+
 .top_back {
   background: url(../img/top_back.jpg);
   width: 100%;
@@ -7390,6 +7347,23 @@ footer {
     display: block;
     font-size: 24px;
     margin: 0 auto 20px; }
+
+.thanks-section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 568px;
+  overflow: hidden; }
+  .thanks-section .message-info {
+    text-align: center; }
+    .thanks-section .message-info h2 {
+      margin-bottom: 50px;
+      font-weight: 400; }
+    .thanks-section .message-info a {
+      letter-spacing: 3px; }
 
 @media only screen and (max-width: 1441px) {
   body {

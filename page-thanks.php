@@ -1,11 +1,7 @@
 <?php
-/**
- * The template for displaying 404 pages (not found)
- *
- * @link https://codex.wordpress.org/Creating_an_Error_404_Page
- *
- * 
- */
+/*
+* Template Name: Thank You Page
+*/
 
 
 ?>
@@ -14,8 +10,8 @@
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="robots" content="noindex">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-156416419-1"></script>
@@ -78,12 +74,9 @@
 	</button>
 </header>
 <body>
-<section class="error-section">
-	<div class="error-number">
-		<span class="glitch" data-text="404">404</span>
-	</div>
-	<div class="error-info">
-		<h2>Ups... Taka strona nie istnieje</h2>
+<section class="thanks-section">
+	<div class="message-info">
+		<h2>Super! Twoja wiadomośc została wysłana.</h2>
 		<a href="/" class="btn-custom">Strona główna</a>
 	</div>
 </section>
