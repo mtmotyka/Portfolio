@@ -90,9 +90,6 @@ get_header(); ?>
             </div>
             <div class="col-md-9 desc-col animated fadeIn">
                 <h4 class="title">Front-End Developer</h4>
-            <div class="col-md-9 job-col animated fadeIn">
-                <p class="company">ADream Group</p>
-                <p class="position">Front-End Developer</p>
                 <p class="desc">Po niecałym roku jako UX Designer stwierdziłem, że nie zadowala mnie to co robię, a od zawsze miałem ciąg do programowanie. Postanowiłem zmienić stanowisko na Front-End Developera i od września 2019 roku zajmuje się już tylko tym. Podczas kodowania stron często korzystam ze swojego dośwadczenia UXa, dzięki któremu lepiej dogaduje się i rozumiem z zespołem grafików i UX Designerów, a przez to strony są jeszcze lepsze w odbiorze.</p>
             </div>
         </div>
