@@ -84,7 +84,11 @@
 	</div>
 	<div class="error-info">
 		<h2>Ups... Taka strona nie istnieje</h2>
+<<<<<<< HEAD
 		<a href="/" class="btn-custom">Strona główna</a>
+=======
+		<a href="/" class="btn_custom_blue btn_big">Strona główna</a>
+>>>>>>> fc8053ea3a596a3beac490a001ff5114f4cbd1ca
 	</div>
 </section>
 <?php wp_footer(); ?>

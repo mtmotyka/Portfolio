@@ -156,6 +156,42 @@
       display: block;
       text-align: center;
       margin: 35px auto 20px;
+<<<<<<< HEAD
+=======
+      &:after {
+        content: '';
+        position: absolute;
+        width: 65px;
+        height: 1px;
+        background-color: #fff;
+        top: 48%;
+        left: 55%;
+        transition: all .18s ease-in-out;
+      }
+      &:before {
+        content:'';
+        position:absolute;
+        opacity:0;
+        top:-66px;
+        left:-66px;
+        right:-66px;
+        bottom:-66px;
+        background: radial-gradient( farthest-side, transparent calc(100% - 3px), #fff calc(100% - 2px) calc(100% - 1px), transparent 100%) fixed/* Fixed to the screen*/ no-repeat;
+        background-size:66px 66px;
+        background-position:inherit;
+        pointer-events:none;
+      }
+      &:hover {
+        border: 1px solid transparent;
+        &:before {
+          opacity:1;
+        }
+        &:after {
+          width: 35px;
+          left: 32%;
+        }
+      }
+>>>>>>> fc8053ea3a596a3beac490a001ff5114f4cbd1ca
     }
     .wpcf7-form-control-wrap {
       position: relative;
